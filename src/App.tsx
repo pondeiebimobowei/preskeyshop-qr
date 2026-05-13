@@ -71,17 +71,7 @@ export default function App() {
             {/* Inverted curve right */}
             <div className="absolute -right-[30px] bottom-0 w-[30px] h-[30px] bg-transparent rounded-bl-[30px] shadow-[-10px_10px_0_0_#fff]" />
 
-            {/* Content holder (Logo) */}
-            <div className="w-20 h-20 bg-black rounded-[24px] flex items-center justify-center transform -translate-y-2 shadow-xl">
-              {/* Graphic P Logo */}
-              <svg 
-                viewBox="0 0 24 24" 
-                className="w-12 h-12 text-white fill-current"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M6 3H13C16.866 3 20 6.13401 20 10C20 13.866 16.866 17 13 17H10V21H6V3ZM10 7V13H13C14.6569 13 16 11.6569 16 10C16 8.34315 14.6569 7 13 7H10Z" />
-              </svg>
-            </div>
+              <img src="/logo.svg" width={500} alt="Logo" className="w-20 h-20" />
           </div>
         </div>
 
