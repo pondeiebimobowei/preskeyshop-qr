@@ -2,7 +2,7 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
-
+import logo from "../p.webp";
 import { motion } from "motion/react";
 import { ShoppingCart, ArrowRight, Instagram, MessageCircle } from "lucide-react";
 
@@ -71,7 +71,7 @@ export default function App() {
             {/* Inverted curve right */}
             <div className="absolute -right-[30px] bottom-0 w-[30px] h-[30px] bg-transparent rounded-bl-[30px] shadow-[-10px_10px_0_0_#fff]" />
 
-              <img src="/logo.svg" width={500} alt="Logo" className="w-20 h-20" />
+              <img src={logo} width={500} alt="Logo" className="w-20 h-20" />
           </div>
         </div>
 
