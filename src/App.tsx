@@ -63,15 +63,7 @@ const LinkItem = ({
   );
 };
 
-// const Logo = ({ className = "w-10 h-10" }: { className?: string }) => (
-//   <svg 
-//     viewBox="0 0 24 24" 
-//     className={`${className} text-white fill-current`}
-//     xmlns="http://www.w3.org/2000/svg"
-//   >
-//     <path d="M6 3H13C16.866 3 20 6.13401 20 10C20 13.866 16.866 17 13 17H10V21H6V3ZM10 7V13H13C14.6569 13 16 11.6569 16 10C16 8.34315 14.6569 7 13 7H10Z" />
-//   </svg>
-// );
+
 
 export default function App() {
   const [view, setView] = useState<"bio" | "coming-soon">("bio");
@@ -117,7 +109,7 @@ export default function App() {
                 <motion.div 
                   animate={{ y: [0, -4, 0] }}
                   transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
-                  className="w-16 h-16 bg-black rounded-[20px] flex items-center justify-center shadow-lg"
+                  className="w-20 h-20 rounded-[24px] flex items-center justify-center "
                 >
                   <img src={logo} width={500} alt="Logo" className="w-20 h-20" />
                 </motion.div>
@@ -184,7 +176,7 @@ export default function App() {
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{ type: "spring", damping: 15, delay: 0.2 }}
-                className="w-20 h-20 bg-black rounded-[24px] flex items-center justify-center shadow-xl mb-8"
+                className="w-20 h-20 rounded-[24px] flex items-center justify-center mb-8"
               >
                 <img src={logo} width={500} alt="Logo" className="w-20 h-20" />
               </motion.div>
